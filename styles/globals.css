@@ -183,3 +183,10 @@
     opacity: 1;
   }
 }
+
+/* Lightbox control styles */
+@layer components {
+  .lightbox-button {
+    @apply rounded-full p-2 bg-black/50 text-white hover:bg-black/70 focus:outline-none;
+  }
+}
