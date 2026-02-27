@@ -35,14 +35,15 @@ export function Gallery() {
           {images.map((image) => (
             <div
               key={image.src}
-              className={`relative aspect-square overflow-hidden rounded-sm ${image.span}`}
+              className={`relative aspect-square img-hover rounded-sm ${image.span}`}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover transition-transform duration-500 hover:scale-105"
+                className="object-cover"
               />
+              <span className="caption">{image.alt}</span>
             </div>
           ))}
         </div>
